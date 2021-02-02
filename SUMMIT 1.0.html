@@ -14,59 +14,73 @@
 <meta property="og:image" content="elea.pt/summit/img/header/fbimg.png">
 <meta property="og:elea.pt/summit" content="elea.pt/summit">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<!--fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap" rel="stylesheet">
 
-
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./SUMMIT 1.0_files/bootstrap.css">
   <link rel="stylesheet" href="./SUMMIT 1.0_files/bootstrap.min.css">
-  <link rel="stylesheet" href="./SUMMIT 1.0_files/style.css">
+  <link rel="stylesheet" href="main.css">
   <title>SUMMIT 1.0</title>
   <link rel="stylesheet" href="./SUMMIT 1.0_files/all.min.css">
 </head>
 
 <body>
+  <!--REMOVER O STICKY QUANDO A 'MARGEM-TOP' ESTIVER ARRANJADA-->
   <header class="container-fluid sticky-top">
     <div class="row">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="http://www.elea.pt/summit/#">
-          <img src="./SUMMIT 1.0_files/logonav.svg" alt="Logo evento">
+         
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
           <div class="navbar-nav">
+            <img class="logo" src="img/logo_iefp.svg" href="http://www.elea.pt/summit/#oevento" src="Logo IEFP">
             <a class="nav-item nav-link active" href="http://www.elea.pt/summit/#oevento">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="http://www.elea.pt/summit/#noticias">Notícias</a>
-            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#conferencia">Conferência</a>
-            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#exposicao">Exposição</a>
-            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#speedrecruitment">Speed Recruitment</a>
-            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#preInscricao"><button class="chamada">Pré-inscrição</button></a>
+            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#conferencia">Oradores</a>
+            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#cronograma">Cronograma</a>
+            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#exposicao">Como Participar</a>
+            <a class="nav-item nav-link" href="http://www.elea.pt/summit/#preInscricao"><button class="chamada">Inscreve-te!</button></a>
           </div>
         </div>
       </nav>
     </div>
   </header>
+
+  
   <section id="oevento" class="">
     <div class="container-fluid ">
       <div class="row">
         <div class="col-12 bgfoto1">
-          <img class="img-fluid" src="./SUMMIT 1.0_files/Mainpage.jpg" alt="Foto que remete a palestras com a logo do evento">
-          <img src="./SUMMIT 1.0_files/logogrande.svg" alt="Logo do evento Summit">
+
+          <img class="img-fluid" src="img/opening.png" alt="Foto que remete a Cybersegurança">
+         <h2 class="title_one">Web Summit 2.0</h2>
+         <h1 class="main_title">CYBERSEGURANÇA <br> E PLATAFORMAS DIGITAIS</h1>
+         <h2 class="title_date">13-16 Abril</h2>
+
+          <button class="sabermais" href="http://www.elea.pt/summit/#sabermais">SABER MAIS</button>
+
         </div>
       </div>
     </div>
     <div class="container ">
       <div class="row">
         <div class="col-12">
-          <h1 class="titulo">SUMMIT 1.0</h1>
+          <h1 class="titulo" id="sabermais">SUMMIT 2.0</h1>
           <p id="eventoTitle">
-            Dia 11 e 12 de fevereiro de 2020 realiza-se a primeira edição do Summit 1.0 – Serviço
-            de Formação de Vila Nova de Gaia.
+            Dia 13 e 16 de Abril de 2021 o Web Summit está de volta para um segundo evento organizado pelo <b>Instituto do empredo e formação profissional</b> de Vila Nova de Gaia.
             <br><br>
-            O evento foi pensado para satisfazer a necessidade de conhecer melhor o mundo da inovação tecnológica, pela
-            perspetiva de recrutadores e empresas dessas áreas.
+            O tema geral deste ano é focado na <b>Cybersegurança e Plataformas Digitais</b> visto que este ano o mundo tecnológico se tornou numa grande parte do nosso dia-a-dia. 
+            <!--O evento foi pensado para satisfazer a necessidade de conhecer melhor o mundo da inovação tecnológica, pela
+            perspetiva de recrutadores e empresas dessas áreas.-->
           </p>
             <p id="sobreevento" class="collapse">
 
@@ -973,7 +987,7 @@
   </section>
 
   <div class="container-fluid">
-    <div class="row contador">
+    <div class="row contador">    <!-- RODAPÈ FIXO FEIO-->
       <div class="container">
         <div class="row">
           <div class="contadorDiv col-lg-3 col-md-3 col-sm-3">
