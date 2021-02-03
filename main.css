@@ -34,7 +34,9 @@ h5 {
 p {
     font-size: 1em;
 }
-
+body{
+    z-index: 0;
+}
 
 /* Navbar */
 .logo{
@@ -79,15 +81,22 @@ p {
     color: #f9f9f9;
     padding: .5rem .8rem 0 .8rem;
 }
+
     
 .navbar-light .navbar-nav .nav-link:hover{  /* nao consigo tirar o hover no buttão ':not(button):hover'*/
     color: #02E8FD;
     border: 1px solid #02E8FD;
-    border-radius:15px
+    border-radius:15px    
+}
+.navbar-light .navbar-nav .nav-link:last-child:hover{
+    color: #02E8FD;
+    border:none;
+    border-radius:15px  
 }
 .navbar-light .navbar-nav .nav-link:last-child{
     color: black;
     padding-top: 0;
+    
 }
 
 button.chamada {
@@ -98,6 +107,7 @@ button.chamada {
     color: black;
     font-weight: 900;
     padding: .5rem .8rem;
+    
 }
 button.chamada:hover{
     color: #02E8FD;
