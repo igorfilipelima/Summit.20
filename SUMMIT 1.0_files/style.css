@@ -1,5 +1,8 @@
 /*04/02/2020 - 11:38 */
+body{
+    position:absolute;
 
+}
 /*Tags gerais*/
 a, li {
     color: black;
@@ -30,7 +33,13 @@ p {
     font-size: 1em;
 }
 
-
+.container{
+    margin-top: 0;
+    padding-top: 0;
+}
+.aaa{
+position:static;
+}
 /* Navbar */
 .navbar{
     width: 100%;
@@ -111,6 +120,7 @@ button.chamada {
     flex-basis: auto;
     flex-direction: row;
     justify-content: center;
+    position: static;
 } /* classe criada por Jeni */
 
 .bgfoto1 img:nth-child(1) {

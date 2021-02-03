@@ -38,11 +38,12 @@ p {
 
 /* Navbar */
 .logo{
-    position: absolute;
     display: flex;
     width: 230px;
     height: 66px;
     left: 13px;
+    position:fixed;
+    z-index: 1;
 
 
 }
@@ -54,6 +55,8 @@ p {
  margin-top: 10px;
     padding: 0;
     text-align: right;
+    position:fixed;
+    z-index: 1;
 }
 .navbar-brand {
     display: inline-flex;
