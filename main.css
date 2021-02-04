@@ -36,6 +36,7 @@ p {
 }
 body{
     z-index: 0;
+    background-color: #f9f9f9;
 }
 
 /* Navbar */
@@ -71,6 +72,10 @@ body{
 }
 .navbar-toggler {
     margin-right: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
 }
 .navbar-nav {
     padding: 0 10px 0 0 ;
@@ -83,7 +88,7 @@ body{
 }
 
     
-.navbar-light .navbar-nav .nav-link:hover{  /* nao consigo tirar o hover no buttão ':not(button):hover'*/
+.navbar-light .navbar-nav .nav-link:hover{
     color: #02E8FD;
     border: 1px solid #02E8FD;
     border-radius:15px    
@@ -99,7 +104,7 @@ body{
     
 }
 
-button.chamada {
+button.chamada:not(.rightbutton) {   /*NAO FUNCIONA*/
     background-color: #F9F9F9;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -128,57 +133,63 @@ button.chamada:hover{
 }
 /* INICIO */
 
+.titlebox{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+   
+   position: absolute;
+   margin-top: 12%;
+   left: 28px;
+   max-height: 400px;
+}
+
+
 .title_one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: 'Oswald', sans-serif;
     font-size: 1.9rem;
     color: #f9f9f9;
-    text-align: center;
     background-color: #1E0D60;
     border-radius: 15px;
-    position: absolute;
     padding: 10px;
     width: 257px;
     height: 60px;
-    left:38px;
-    top: 190px;
+  
 
 }
 .main_title{
-    position: absolute;
+    display: flex;
     font-family: 'Oswald', sans-serif;
     font-size: 4rem;
     color: #f9f9f9;
-    text-align: left;
-    left: 38px;
-    top:249px;
+  
 }
 .title_date{
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
-    position: absolute;
     color: #f9f9f9;
-    left: 38px;
-    top:405px;
+  
 }
 .sabermais{
     font-family: 'Oswald', sans-serif;
     font-size: 1.7rem;
     color: #f9f9f9;
-    position: absolute;
     left: 50px;
     width: 390px;
     height: 100px;
+    margin-top: 20px;
     border: 3px solid #02E8FD;
     border-radius: 15px;
     background-color: rgba(103, 103, 103, 0%);
-    top:470px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
 }
 .sabermais:hover{    /* NAO FUNCIONA :( */
-    background-color: #f9f9f9, 10%;
+    background-color: #67298B, 20%;
 }
-
 
 
 
@@ -218,6 +229,9 @@ button.chamada:hover{
     min-height: 140px;
     padding: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bgfoto2 img {
     width: 100%;
@@ -225,8 +239,7 @@ button.chamada:hover{
 }
 #videoSummit {
     width: 100%;
-    display: flex;
-    border-radius: 15px;
+    display: flex; 
 }
 #videoSummit .video {
     margin: 10px auto 5px auto;
@@ -235,13 +248,14 @@ button.chamada:hover{
     font-weight: bold;
 }  /* classe criada por Jeni */
 .subtitle {
-    color: white;
-    font-size: 2em;
+    color: #f9f9f9;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, .45);
     position: absolute;
-    bottom: 25%;
-    padding: 1rem 2rem 1rem 6rem;
+
+   /* bottom: 35%;
+    margin-left: 50%;*/
 }
 
 
@@ -249,16 +263,16 @@ button.chamada:hover{
 .btn.vermais {
     background-color: #1E0D60;
     padding: .4rem 1.5rem;
-    color: #02E8FD,;    /* NAO CONSIGO MUDAR ESTA COR DO TEXTO PORQUE ESTÁ NO BOOTSTRAP MIN EM PRETO*/
+    color: #02E8FD;  
     display: block;
     margin: 30px auto 20px auto;
     border-radius: 15px;
 
 }
 .btn.vermais:hover {
-    background-color: white;
-    color: #5CB85C;
-    border: 1px solid #5CB85C;
+    background-color: #67298B;
+    color: #02E8FD;
+    border: 1px solid #02E8FD;
 }
 
 /*NOTICIAS*/
@@ -272,6 +286,7 @@ button.chamada:hover{
     padding: 2rem 2.5% 0 2.5%;
     margin: 0;
     width: 100%;
+    background-color: #f9f9f9;
 }
 #noticias2 {
     padding: 0 2.5% 0 2.5%;
@@ -280,7 +295,6 @@ button.chamada:hover{
 }
 .noticias {
     margin-top: 40px;
-    background-color: rgba(196, 196, 196, .1);
 }
 .card.noticias {
     width: 100%;
@@ -288,14 +302,16 @@ button.chamada:hover{
     overflow: hidden;
     text-align: left;
     padding: 20px 15px 10px 15px; 
-    border-radius: 5px;
+    border-radius: 15px;
     box-sizing: border-box;
     margin-top: 2rem;
     cursor: pointer;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    background-color: white;
+    -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background: rgb(103,41,139);
+    background: linear-gradient(180deg, rgba(103,41,139,1) 0%, rgba(30,13,96,1) 100%);
+    color: #f9f9f9;
 }
 
 .card.noticias .cardimg {
@@ -334,15 +350,16 @@ button.chamada:hover{
     width: 100%;
     text-align: center;
     padding: 20px 15px 10px 15px; 
-    border-radius: 5px;
+    border-radius: 15px;
     box-sizing: border-box;
     margin-top: 2rem;
     cursor: pointer;
-    -webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    -moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.2);
-    min-height: 400px;
-    overflow: hidden;
+    -webkit-box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    -moz-box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    background: rgb(103,41,139);
+    background: linear-gradient(180deg, rgba(103,41,139,1) 0%, rgba(30,13,96,1) 100%);
+    color: #f9f9f9;
 }
 
 /*
@@ -420,6 +437,7 @@ button.chamada:hover{
 #oradores3 {
     padding: 2rem 2.5% 0 2.5%;
     margin: 0;
+    background-color: #f9f9f9;
 }
 #todosoradores {
     padding: 0rem 2.5% 2rem 2.5%;
@@ -428,6 +446,7 @@ button.chamada:hover{
 .veroradores {
     width: 100%;
     margin: 0;
+    background-color: #f9f9f9;
 }
 /* CRONOGRAMA */
 #cronograma {
@@ -436,6 +455,10 @@ button.chamada:hover{
 
 #cronograma h2 {
     margin: 0 auto;
+    color:#1E0D60;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    
 }
 
 #cronograma h3 {
@@ -663,7 +686,7 @@ button {
     width: auto;
 }
 
-/* CONTADOR */
+/* CONTADOR        //RODAPÉ AZUL FIXO FEIO
 .contador {
     width: 100%;
     height: 100px;
@@ -706,7 +729,7 @@ button {
     padding: .8rem 1.5rem;
     margin: 5% 0 0 0;
 }
-
+*/
 
 
 /************STANDS*******/
@@ -1009,6 +1032,14 @@ button {
     #logosFooter{
         margin-top: 20px;
     }
+    .titlebox{
+        width: 550px;
+        margin-left: 0px;
+    }
+    .main_title{
+        font-size:3.8rem;
+        
+    }
 }
 @media (max-width: 500px) {
     body {
@@ -1024,6 +1055,14 @@ button {
         width: 360px;
         height: 215px;
     }
+
+.titlebox{
+    width: 420px;
+    margin-top: 90px;
+}
+.main_title{
+    font-size: 3rem;
+}
 }
 @media (max-width: 360px) {
     .video iframe {
@@ -1043,6 +1082,7 @@ button {
     .contador .relogio {
         padding-left: 0;
     }
+
 
 }
 
