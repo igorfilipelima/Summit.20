@@ -451,6 +451,8 @@ button.chamada:hover{
 /* CRONOGRAMA */
 #cronograma {
     margin-top: 30px;
+    display: block;
+    font-family: 'Oswald', sans-serif;
 }
 
 #cronograma h2 {
@@ -458,25 +460,201 @@ button.chamada:hover{
     color:#1E0D60;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    
+    text-align: center;  
 }
-
-#cronograma h3 {
-    font-size: 1.7em;
-    padding: .5rem .8rem;
-    background-color: #5199DB;
-    display: inline-flex;
+/*Dias impares*/
+.cronograma-fundo-azul{
+    background-color: #1E0D60;
+    color: #fff;
+    width: auto;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.dias{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size:35px;  
+    color: #FFF;
+    margin-left: 30px;
+    margin-top: 15px;
+    }
+.marcador{
+    display: flex;
+    background-color: #fff;
+    width: 95%;
+    align-content: center;
+    border-radius: 15px;
+    height:fit-content;
+    color: #000;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin: 30px 30px 0px 30px;
+}
+.margin-bottom{
+    margin-bottom: 97px;
+}
+div.conteudo-marcador{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 15px;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#orador-width{
+    width: 100%;
+    background-color: white;
+    color: black;
+}
+#orador-width:last-child{
+    padding-bottom: 25px;
+}
+#hora-empresa{
+    display: flex;
+    width: 200px;
+    height: 100%;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    top:50%;
+    left:50%;
+}
+#hora-empresa h3{
+    font-size:larger;
+}
+.mini-marcador{
+    border-radius: 15px;
     color: white;
-    margin: 2rem 20% 0 20%;
+    background-color:#1E0D60;
+    height:40%;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo-marcador .nome-orador{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.conteudo-marcador #hora-empresa{
+    height: 50px;
+    margin: 10px;
 }
 
-.horarios {
-    background-color: rgba(196, 196, 196, .1);
-    padding: 0 2.5% 25px 2.5%;
-    margin: 20px 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Dias pares*/
+.cronograma-fundo-branco{
+    background-color: #FFF;
+    color: #1E0D60;
+    width: auto;
+    height:fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.dias-reverse{
+    text-transform: uppercase;
+    font-weight:900;
+    font-size:35px;  
+    color: #1e0d60;
+    margin-left: 30px;
+    margin-top: 15px;
+    }
+.marcador-azul{
+    display: flex;
+    background-color: #1E0D60;
+    width: 95%;
+    align-content: center;
+    border-radius: 15px;
+    height:fit-content;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin: 30px 30px 0px 30px;
+}
+.margin-bottom{
+    margin-bottom: 97px;
+}
+div.conteudo-marcador-azul{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1E0D60;
+    border-radius: 15px;
+    justify-content: space-around;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+#orador-width-reverse{
+    width: 100%;
+    background-color: #1E0D60;
+    color: white;
+}
+#orador-width-reverse:last-child{
+    padding-bottom: 25px;
+}
+#hora-empresa-reverse{
+    display: flex;
+    width: 200px;
+    height: 100%;
+    font-weight: 800;
+    font-size: larger;
+    text-align: center;
+    top:50%;
+    left:50%;
+}
+#hora-empresa-reverse h3{
+    font-size:larger;
+}
+.mini-marcador{
+    border-radius: 15px;
+    color: white;
+    background-color:#1E0D60;
+    height:40%;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo-marcador-azul .nome-orador{
+    font-size: xx-large;
+    font-weight: 700;
+}
+.conteudo-marcador-azul #hora-empresa-reverse{
+    height: 50px;
+    margin: 10px;
+    background-color: #FFF;
+    color: #1E0D60;
 }
 
-.horas {
+
+
+/* .horas {
     width: 100%;
     background-color: #5199DB;
     font-size: 1.7em;
@@ -498,7 +676,7 @@ button.chamada:hover{
     margin-top: 8rem;
     text-align: center;
     color: white;
-}
+} */
 /*
 removido a pedido da Nídia
 .horas.horasLinha::before {
@@ -511,7 +689,7 @@ removido a pedido da Nídia
 }
 */
 
-.horarios .cardAssunto {
+/* .horarios .cardAssunto {
     min-height: 135px;
     background-color: white;
     padding: 10px;
@@ -524,7 +702,7 @@ removido a pedido da Nídia
     background-color: none;
     padding: 10px;
     margin-top: 30px;
-}
+} */
 
 /*Noticias*/
 
@@ -1022,6 +1200,8 @@ button {
         flex: 0 0 100%;
         max-width: 100%;
         text-align: center;
+        flex-direction: row-reverse;
+        
     }
     .contadorDiv:nth-child(1) {
         display: none;
