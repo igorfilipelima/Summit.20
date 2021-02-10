@@ -32,6 +32,9 @@
   <link rel="stylesheet" href="main.css">
   <title>SUMMIT 2.0</title>
   <link rel="stylesheet" href="./SUMMIT 1.0_files/all.min.css">
+  <!-- Smooth scroll e nav BG js-->
+  <script src="smoothscroll.js"></script>
+  <script src="navbar.js"></script>
 </head>
 
 <body>
@@ -50,9 +53,9 @@
             <img class="logo" src="img/logo_iefp.svg" href="http://www.elea.pt/summit/#oevento" src="Logo IEFP">
             <a class="nav-item nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#noticias">Notícias</a>
-            <a class="nav-item nav-link" href="#conferencia">Oradores</a>
+            <a class="nav-item nav-link" href="#oradores">Oradores</a>
             <a class="nav-item nav-link" href="#cronograma">Cronograma</a>
-            <a class="nav-item nav-link" href="#exposicao">Como Participar</a>
+            <a class="nav-item nav-link" href="#comoparticipar">Como Participar</a>
             <a class="nav-item nav-link" id="no-hover" href="#preInscricao"><button
                 class="chamada">Inscreve-te!</button></a>
           </div>
@@ -69,10 +72,10 @@
 
           <img class="img-fluid" src="img/opening.png" alt="Foto que remete a Cybersegurança">
           <div class="titlebox">
-            <h2 class="title_one">Web Summit 2.0</h2>
-            <h1 class="main_title">CYBERSEGURANÇA <br> E PLATAFORMAS DIGITAIS</h1>
-            <h2 class="title_date">13-16 Abril</h2>
-            <button class="sabermais" href="http://www.elea.pt/summit/#sabermais">SABER MAIS</button>
+            <h2 class="title_one">Web&nbsp;Summit&nbsp;2.0</h2>
+            <h1 class="main_title">CYBERSEGURANÇA <br> E&nbsp;PLATAFORMAS&nbsp;DIGITAIS</h1>
+            <h2 class="title_date">13-16&nbsp;Abril</h2>
+            <button class="sabermais" href="http://www.elea.pt/summit/#sabermais">SABER&nbsp;MAIS</button>
           </div>
         </div>
       </div>
@@ -120,7 +123,7 @@
   </section>
 
   <section id="noticias">
-    <div class="container-fluid cont">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12 bgfoto2 ">
           <img src="img/banner_noticias.png" alt="Foto sobre as Noticias">
@@ -213,8 +216,8 @@
       </div>
     </div>
   </section>
-  <section id="conferencia">
-    <div class="container-fluid cont">
+  <section id="oradores">
+    <div class="container-fluid ">
       <div class="row">
         <div class="col-12 bgfoto2 ">
           <img src="img/banner_oradores.png" alt="Foto sobre a Conferência">
@@ -231,7 +234,6 @@
       </div>
       <div>
         <div class="row oradores">
-          <!--<h2 class="headoradores">Conheça os Oradores</h2>-->
           <div id="oradores3" class="row justify-content-center">
             <div class="col-lg-4 col-md-5 col-sm-8">
               <div class="card orador">
@@ -455,46 +457,17 @@
               data-target="#todosoradores" aria-expanded="false" aria-controls="collapseExample">Ver mais</button>
           </div>
         </div>
+      </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        <div id="cronograma" class="row">
+        <section id="cronograma">
           <h2>Cronograma</h2>
           <div class="cronograma-fundo-azul">
+
+<div class="container">
+
+
+
             <div class="dias">dia 13 </div>
             <div class="marcador">
               <div class="conteudo-marcador">
@@ -573,6 +546,8 @@
                 </div>
               </div>
             </div>
+
+
             <div class="marcador margin-bottom">
               <div class="conteudo-marcador">
                 <div class="mini-marcador" id="hora-empresa">
@@ -593,11 +568,12 @@
               </div>
             </div>
           </div>
-
+</div>
 
 
 
           <div class="cronograma-fundo-branco">
+<div class="container">
             <div class="dias-reverse">dia 14 </div>
             <div class="marcador-azul">
               <div class="conteudo-marcador-azul">
@@ -694,9 +670,11 @@
                   sam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia conse
                 </div>
               </div>
+</div>              
             </div>
 
             <div class="cronograma-fundo-azul">
+<div class="container">
               <div class="dias">dia 15 </div>
               <div class="marcador">
                 <div class="conteudo-marcador">
@@ -794,12 +772,14 @@
                   </div>
                 </div>
               </div>
+</div>
             </div>
   
   
   
   
             <div class="cronograma-fundo-branco">
+<div class="container">
               <div class="dias-reverse">dia 16 </div>
               <div class="marcador-azul">
                 <div class="conteudo-marcador-azul">
@@ -897,60 +877,14 @@
                   </div>
                 </div>
               </div>
-            
+</div>
           </div>
-        </div>
-      </div>
-    </div
-    
+        </section> <!-- final section cronograma-->
+   
+
+  
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </section>
   <section id="exposicao">
     <div class="container-fluid cont">
       <div class="row">
@@ -1079,7 +1013,7 @@
 
     </div>
   </section>
-  <section id="speedrecruitment">
+  <section id="comoparticipar">
     <div class="container-fluid cont">
       <div class="row">
         <div class="col-12 bgfoto2">
@@ -1146,7 +1080,7 @@
     <div id="inscricao" class="container">
       <div class="row margin0">
         <div class="col-12">
-          <h2>Faça a sua Pré-inscrição!</h2>
+          <h2>Garante já o teu lugar!</h2>
         </div>
       </div>
       <div class="row margin0">
@@ -1229,20 +1163,13 @@
             </div>
           </form>
 
-          <iframe class="margin0" style="width: 100%;" src="./SUMMIT 1.0_files/saved_resource.html" frameborder="0"
-            name="registo_msg">
-
-          </iframe>
-
         </div>
 
       </div>
-      <div class="row mapa">
-        <iframe src="./SUMMIT 1.0_files/embed.html" width="600" height="450" frameborder="0" style="border:0;"
-          allowfullscreen=""></iframe>
-      </div>
-    </div>
   </section>
+
+
+  <!--FOOTER-->
   <section id="footer" class="pgfinal">
     <div class="container-fluid">
 
@@ -1252,9 +1179,9 @@
           <ul>
             <li><a href="http://www.elea.pt/summit/#oevento">Home</a></li>
             <li><a href="http://www.elea.pt/summit/#noticias">Notícias</a></li>
-            <li><a href="http://www.elea.pt/summit/#conferencia">Conferência</a></li>
-            <li><a href="http://www.elea.pt/summit/#exposicao">Exposição</a></li>
-            <li><a href="http://www.elea.pt/summit/#speedrecruitment">Speed Recruitment</a></li>
+            <li><a href="http://www.elea.pt/summit/#oradores">Oradores</a></li>
+            <li><a href="http://www.elea.pt/summit/#cronograma">Cronograma</a></li>
+            <li><a href="http://www.elea.pt/summit/#comoparticipar">Como participar</a></li>
             <li><a href="http://www.elea.pt/summit/#preInscricao">Pré-inscrição</a></li>
           </ul>
         </div>
@@ -1264,17 +1191,19 @@
             VILA NOVA DE GAIA<br>
             4400-330 Santa Marinha<br>
             +351 22 0989540</p>
+            <a href="https://m.facebook.com/events/812408069181947"><img src="./SUMMIT 1.0_files/facebookFooter.svg"
+              alt="Facebook do evento" style="max-width: 40px"></a>
         </div>
 
-        <div id="redesSociais" class="col-md-2 col-sm-6 col-4">
-          <h5>Rede Social</h5>
-          <a href="https://m.facebook.com/events/812408069181947"><img src="./SUMMIT 1.0_files/facebookFooter.svg"
-              alt="Facebook do evento" style="max-width: 50px"></a>
-        </div>
+       
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.0787240275868!2d-8.623677884582087!3d41.132807379288316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd246526a80a8afb%3A0xe4f625f71f22884d!2sIEFP%20Instituto%20de%20Emprego%20e%20Forma%C3%A7%C3%A3o%20Profissional!5e0!3m2!1spt-PT!2spt!4v1612913277385!5m2!1spt-PT!2spt" 
+            width="100%" height="300" frameborder="0" style="border-radius:15px;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 
+        </div>
 
       </div>
-      <hr style="border-color: white" ;="">
+      <hr style="border-color: #f9f9f9" width="100%">
 
       <div id="logosFooter" class="row">
         <div class="col-lg-12">
@@ -1302,7 +1231,7 @@
   </section>
 
 
-  <!-- RODAPÈ FIXO FEIO-->
+  <!-- RODAPÈ FIXO -->
 
   <!-- <div class="container-fluid">
     <div class="row contador">   

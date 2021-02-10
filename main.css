@@ -45,7 +45,8 @@ body{
     width: 230px;
     height: 66px;
     left: 13px;
-    position:fixed;
+    position:absolute;
+    top: 6px;
     z-index: 1;
 
 
@@ -55,15 +56,33 @@ body{
 .navbar{
     width: 100%;
     min-width: 315px;
- margin-top: 10px;
-    padding: 0;
+    padding-top: 10px;
+   /* padding: 0;*/
     text-align: right;
     position:fixed;
     z-index: 1;
+    height: 80px;
+    background-color: transparent;
 }
+
+.navbg{
+    width: 100%;
+    min-width: 315px;
+    padding-top: 10px;
+    text-align: right;
+    position:fixed;
+    z-index: 1;
+    height: 80px;
+    background-color: tomato;
+}
+
+
+
+
 .navbar-brand {
     display: inline-flex;
     padding: 10px 0 10px 20px;
+    
 }
 .navbar-brand img {
     width: 100%;
@@ -79,6 +98,7 @@ body{
 }
 .navbar-nav {
     padding: 0 10px 0 0 ;
+    
 }
 .navbar-light .navbar-nav .nav-link {
     position: relative;
@@ -461,11 +481,12 @@ button.chamada:hover{
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     text-align: center;  
+    margin-bottom: 40px;
 }
 /*Dias impares*/
 .cronograma-fundo-azul{
     background-color: #1E0D60;
-    color: #fff;
+    color: #f9f9f9;
     width: auto;
     height:fit-content;
     display: flex;
@@ -475,13 +496,13 @@ button.chamada:hover{
     text-transform: uppercase;
     font-weight: 900;
     font-size:35px;  
-    color: #FFF;
+    color: #f9f9f9;
     margin-left: 30px;
     margin-top: 15px;
     }
 .marcador{
     display: flex;
-    background-color: #fff;
+    background-color: #f9f9f9;
     width: 95%;
     align-content: center;
     border-radius: 15px;
@@ -498,18 +519,16 @@ button.chamada:hover{
 div.conteudo-marcador{
     display: flex;
     justify-items: center;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #FFF;
+    background-color: #f9f9f9;
     border-radius: 15px;
     justify-content: space-around;
     margin-right: 50px;
-    margin-left: 50px;
 }
 #orador-width{
     width: 100%;
-    background-color: white;
+    background-color: #f9f9f9;
     color: black;
     word-break: break-all;
 }
@@ -524,18 +543,20 @@ div.conteudo-marcador{
     left:50%;
 }
 #hora-empresa h3{
-    font-size:larger;
+    font-size:1.3rem;
+    font-weight: 700;
 }
 .mini-marcador{
     border-radius: 15px;
-    color: white;
+    color: #f9f9f9;
     background-color:#1E0D60;
     height:40%;
     align-items: center;
     justify-content: center;
+    font-size: 1rem;
 }
 .conteudo-marcador .nome-orador{
-    font-size: xx-large;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 .conteudo-marcador #hora-empresa{
@@ -570,7 +591,7 @@ div.conteudo-marcador{
 
 /*Dias pares*/
 .cronograma-fundo-branco{
-    background-color: #FFF;
+    background-color: ##f9f9f9;
     color: #1E0D60;
     width: auto;
     height:fit-content;
@@ -603,19 +624,17 @@ div.conteudo-marcador{
 div.conteudo-marcador-azul{
     display: flex;
     justify-items: center;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: #1E0D60;
     border-radius: 15px;
     justify-content: space-around;
     margin-right: 50px;
-    margin-left: 50px;
 }
 #orador-width-reverse{
     width: 100%;
     background-color: #1E0D60;
-    color: white;
+    color: #f9f9f9;
     word-break: break-all;
 }
 #hora-empresa-reverse{
@@ -629,24 +648,19 @@ div.conteudo-marcador-azul{
     left:50%;
 }
 #hora-empresa-reverse h3{
-    font-size:larger;
+    font-size: 1.3rem;
+    font-weight: 700;
 }
-.mini-marcador{
-    border-radius: 15px;
-    color: white;
-    background-color:#1E0D60;
-    height:40%;
-    align-items: center;
-    justify-content: center;
-}
+
+
 .conteudo-marcador-azul .nome-orador{
-    font-size: xx-large;
+    font-size: 1.3rem;
     font-weight: 700;
 }
 .conteudo-marcador-azul #hora-empresa-reverse{
     height: 50px;
     margin: 10px;
-    background-color: #FFF;
+    background-color: #f9f9f9;
     color: #1E0D60;
 }
 
@@ -789,19 +803,7 @@ button {
 #inscricao .textoForm {
     padding: 0 5%;
 }
-#inscricao .mapa {
-    margin: 30px 0 0 0;
-    width: 100%;
-    text-align: center;
-    overflow: hidden;
-}
-#inscricao .mapa iframe {
-    width: 70%;
-    height: auto;
-    min-width: 280px;
-    min-height: 350px;
-    margin: 0 auto;
-}
+
 .margin0 {
     margin: 0;
 }
@@ -813,49 +815,62 @@ button {
 }
 
 /*FINAL DA PAGINA*/
-.pgfinal {
-    margin-bottom: 100px;
+h5{
+    font-weight: 700;
+    text-decoration: underline;
+    max-width: 360px;
 }
-#footer {
-    background-color: rgb(51, 89, 94);
+
+
+#footer { display: flex;
+    background: rgb(103,41,139);
+background: linear-gradient(180deg, rgba(103,41,139,1) 0%, rgba(30,13,96,1) 83%);
     padding: 20px 20px;
-    color: white;
+    color: #f9f9f9;
     margin-top: 70px;
 }
 #footer ul {
+    display: flex;
+    flex-flow: column wrap;
     list-style: none;
     padding: 0;
     font-size: .9em;
 }
 #footer a {
-    color: white;
+    color: #f9f9f9;
 }
 #footer a:hover {
     text-decoration: underline;
+    color: #02E8FD;
 }
 #footer p {
-    font-size: .7em;
+    font-size: .8em;
 }
-#turma a {
-    display: inline-flex;
-    padding: 1rem;
-    background-color: rgb(151, 51, 177);
-    border-radius: 5px;
+
+#info img:hover{
+    filter: brightness(.9);
 }
-#redesSociais {
-    text-align: center;
+
+
+.map{
+ display: flex;
+overflow: hidden;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+width: 500px;
 }
-#redesSociais img {
-    padding-top: 1rem;
-    width: 50%;
-    max-width: 60px;
-}
+
+
 #logosFooter {
     text-align: center;
+    fill: #F74F58;
 }
 #logosFooter img {
     width: 80px;
     margin: 0 10px;
+}
+
+#logosFooter img:hover{
+    width: 90px;
 }
 #logosFooter .logop{
     height: 40px;
@@ -1099,12 +1114,6 @@ button {
 
 
 
-.cont {
-
-    max-width: 1150px;
-
-}
-
 
 @media (max-width: 991.98px) { 
     .headoradores {
@@ -1182,14 +1191,14 @@ button {
         width: 460px;
         height: 315px;
     }
+    .map{
+        width: 500px;
+    }
 }
 @media (max-width: 600px) { 
     #oevento .conteudo{
         padding-right: 40px;
         padding-left: 40px;
-    }
-    .pgfinal {
-        margin-bottom: 120px;
     }
     .contador {
         height: auto;
@@ -1218,6 +1227,7 @@ button {
         font-size:3.8rem;
         
     }
+    
 }
 @media (max-width: 500px) {
     body {
@@ -1241,6 +1251,9 @@ button {
 .main_title{
     font-size: 3rem;
 }
+}
+.map{
+    margin-top: 15px;
 }
 @media (max-width: 360px) {
     .video iframe {
