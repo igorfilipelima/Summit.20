@@ -1,13 +1,12 @@
+"use strict"
+const myNav= document.querySelector('nav');
 
-$(document).ready(function(){
-    $(window).scroll(function(){
-        var scroll = $(window).scrollTop();
-        if (scroll >= 300) {
-          $(".navbar").css("background" , "navbg");
-        }
-  
-        else{
-            $(".navbar").css("background" , "transparent");  	
-        }
-    })
-  })
+addEventListener('scroll', () =>{
+
+    if(scrollY>400){
+        myNav.style.setProperty('background',"blue");
+    }
+  else {
+        myNav.style.setProperty('background',"transparent");
+  }
+})
