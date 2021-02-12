@@ -567,31 +567,9 @@ div.conteudo-marcador{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*Dias pares*/
 .cronograma-fundo-branco{
-    background-color: ##f9f9f9;
+    background-color: #f9f9f9;
     color: #1E0D60;
     width: auto;
     height:fit-content;
@@ -666,56 +644,6 @@ div.conteudo-marcador-azul{
 
 
 
-/* .horas {
-    width: 100%;
-    background-color: #5199DB;
-    font-size: 1.7em;
-    font-weight: bolder;
-    margin-top: 8rem;
-    text-align: center;
-    color: white;
-}
-
-.horas:nth-child(1) {
-    margin-top: 10rem;
-}
-
-.horasVazio {
-    width: 100%;
-    background-color: none;
-    font-size: 1.7em;
-    font-weight: bolder;
-    margin-top: 8rem;
-    text-align: center;
-    color: white;
-} */
-/*
-removido a pedido da Nídia
-.horas.horasLinha::before {
-    content: '';
-    width: 5px;
-    height: 360px;
-    background-color: #5199DB;
-    position: absolute;
-    z-index: -1;
-}
-*/
-
-/* .horarios .cardAssunto {
-    min-height: 135px;
-    background-color: white;
-    padding: 10px;
-    margin-top: 30px;
-    border: 1px solid rgba(0, 0, 0, 0.11);
-}
-
-.horarios .cardAssuntoCinza {
-    min-height: 135px;
-    background-color: none;
-    padding: 10px;
-    margin-top: 30px;
-} */
-
 /*Noticias*/
 
 .noticia {
@@ -729,9 +657,21 @@ removido a pedido da Nídia
  }
 
  
+/*Como Participar*/
+.participar{
+display: flex;
+min-height: max-content;
 
+}
+.texto-participar{
+    border: #1E0D60 solid 2px;
+    width: 80%;
+    text-align: justify;
+    align-content: space-between;
+    margin-top: 36px;
+}
 /*EXPOSICAO*/
-#exposicao {
+/* #exposicao {
     margin-top: 70px;
 }
 .exposicao_mapa {
@@ -743,10 +683,10 @@ removido a pedido da Nídia
 }
 .exposicao_mapa img {
     width: 100%;
-}
+} */
 
 /* SPEED RECRUITMENT */
-#speedrecruitment {
+/* #speedrecruitment {
     margin-top: 70px;
 }
 #recruitment {
@@ -782,7 +722,7 @@ removido a pedido da Nídia
 button {
     box-shadow: none;
     border: none;
-}
+} */
 
 /*PRE INSCRICAO*/
 #preInscricao {
