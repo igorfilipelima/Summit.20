@@ -44,7 +44,7 @@ body{
     display: flex;
     width: 230px;
     height: 66px;
-    left: 13px;
+    left: -31px;
     position:absolute;
     top: 6px;
     z-index: 1;
@@ -65,20 +65,6 @@ body{
     background-color: transparent;
     transition: all 500ms ease-out;
 }
-
-.navbg{
-    width: 100%;
-    min-width: 315px;
-    padding-top: 10px;
-    text-align: right;
-    position:fixed;
-    z-index: 1;
-    height: 80px;
-    background-color: tomato;
-}
-
-
-
 
 .navbar-brand {
     display: inline-flex;
@@ -126,11 +112,11 @@ body{
 }
 
 button.chamada:not(.rightbutton) {   /*NAO FUNCIONA*/
-    background-color: #F9F9F9;
+    background-color: #67298B;
     border-radius: 15px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
-    color: black;
+    color: #f9f9f9;
     font-weight: 900;
     padding: .5rem .8rem;
     
@@ -158,11 +144,11 @@ button.chamada:hover{
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
-   
    position: absolute;
    margin-top: 12%;
    left: 28px;
    max-height: 400px;
+   max-width: 600px;
 }
 
 
@@ -665,12 +651,34 @@ min-height: max-content;
 
 }
 .texto-participar{
-    border: #1E0D60 solid 2px;
     width: 80%;
     text-align: justify;
     align-content: space-between;
     margin-top: 36px;
+    font-size:1rem; 
 }
+.zoom{
+    display: flex;
+    align-content: space-around;
+    justify-content: space-around;
+    margin-top: 55px;
+    padding: 10px;
+    width: 80%;
+}
+
+.zoom h2{
+    color: #4E33CC;
+    font-size: 1.3rem;
+
+}
+.texto-zoom{
+    width:60%;
+}
+
+.zoom img{
+    width: 100px;
+}
+
 /*EXPOSICAO*/
 /* #exposicao {
     margin-top: 70px;
@@ -733,7 +741,6 @@ button {
     color: white;
 }
 #inscricao {
-    background-color: rgba(196, 196, 196, .1);
     padding: 0 2.5% 30px 2.5%;
     margin-top: 40px;
 }
@@ -749,7 +756,7 @@ button {
     margin: 0;
 }
 .RGPD {
-    color: blue;
+    color: 02E8FD;
 }
 .RGPD:hover {
     text-decoration: underline;
@@ -768,7 +775,7 @@ h5{
 background: linear-gradient(180deg, rgba(103,41,139,1) 0%, rgba(30,13,96,1) 83%);
     padding: 20px 20px;
     color: #f9f9f9;
-    margin-top: 70px;
+  
 }
 #footer ul {
     display: flex;
@@ -798,6 +805,7 @@ background: linear-gradient(180deg, rgba(103,41,139,1) 0%, rgba(30,13,96,1) 83%)
 overflow: hidden;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 width: 500px;
+padding-top: 15px;
 }
 
 
@@ -1135,6 +1143,11 @@ width: 500px;
     .map{
         width: 500px;
     }
+    .sabermais{
+ height: 80px;
+ width: 310px;
+
+}
 }
 @media (max-width: 600px) { 
     #oevento .conteudo{
@@ -1163,9 +1176,10 @@ width: 500px;
     .titlebox{
         width: 550px;
         margin-left: 0px;
+        margin-top: 92px;
     }
     .main_title{
-        font-size:3.8rem;
+        font-size:3.6rem;
         
     }
     
@@ -1174,9 +1188,7 @@ width: 500px;
     body {
         font-size: 14px;
     }
-    .pgfinal {
-        margin-bottom: 110px;
-    }
+   
     #turma {
         text-align: center;
     }
@@ -1185,16 +1197,50 @@ width: 500px;
         height: 215px;
     }
 
-.titlebox{
-    width: 420px;
-    margin-top: 90px;
-}
-.main_title{
-    font-size: 3rem;
-}
-}
+    .titlebox{
+        width: 420px;
+        margin-top: 115px;
+    }
+    .main_title{
+        font-size: 2.8rem;
+        margin: 15px 0px 15px 0px;
+    }
+   
+    .title_one{
+        font-size: 1.4rem;
+        width: 190px;
+        height: 55px;
+    }
+    .title_date{
+        font-size: 1.4rem;
+    }
 .map{
     margin-top: 15px;
+}
+
+
+.zoom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.zoom img{
+margin-top: 30px;
+width: 90px;
+}
+
+.zoom h2{
+    text-align: center;
+ 
+}
+
+.texto-zoom{
+    width: 100%;
+}
+
+.texto-participar{
+   
 }
 @media (max-width: 360px) {
     .video iframe {
@@ -1215,7 +1261,25 @@ width: 500px;
         padding-left: 0;
     }
 
-
+    .titlebox{
+        width: 420px;
+        margin-top: 158px;
+    }
+    .main_title{
+        font-size: 2.1rem;
+        margin: 15px 0px 15px 0px;
+    }
+    .sabermais{
+    display: none;
+    }
+    .title_one{
+        font-size: 1.1rem;
+        width: 170px;
+        height: 45px;
+    }
+    .title_date{
+        font-size: 1.1rem;
+    }
 }
 
 @media (max-width: 300px) {
