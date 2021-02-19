@@ -463,7 +463,7 @@ section{
     margin: 0;
     background-color: #f9f9f9;
 }
-/* CRONOGRAMA */
+/* CRONOGRAMA 
 #cronograma {
     padding-top: 30px;
     display: block;
@@ -477,9 +477,9 @@ section{
     text-transform: uppercase;
     text-align: center;  
     margin-bottom: 40px;
-}
+}/*
 /*Dias impares*/
-.cronograma-fundo-azul{
+/*.cronograma-fundo-azul{
     background-color: #1E0D60;
     color: #f9f9f9;
     width: auto;
@@ -563,7 +563,7 @@ div.conteudo-marcador{
 
 
 /*Dias pares*/
-.cronograma-fundo-branco{
+/*.cronograma-fundo-branco{
     background-color: #f9f9f9;
     color: #1E0D60;
     width: auto;
@@ -636,8 +636,164 @@ div.conteudo-marcador-azul{
     background-color: #f9f9f9;
     color: #1E0D60;
 }
+*/
+/*NOVO CRONOGRAMA*/
+.crono-title{
+    color:#1E0D60;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    text-align: center;  
+    margin-bottom: 40px;
+}
 
+#cronograma{
+    background-color: #f9f9f9;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.arrange-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
+    margin-bottom: 25px;
+}
+.this-content{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+    background-color: #1E0D60;
+    border-radius: 15px;
+}
 
+.time{
+    width: 110px;
+    height: 35px;
+    background-color:#f9f9f9;
+    border-radius: 15px;
+    color:#1E0D60;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+.empresa{
+    height: 35px;
+    width: 110px;
+    background-color:#f9f9f9;
+    border-radius: 15px;
+    color:#1E0D60;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+}
+aside{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+.bubble{
+    display: flex;
+    flex-flow: column wrap;
+    width: 70%;
+    border-radius: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+#cronograma h4{
+    color:#1E0D60;
+    margin:0;
+    font-size: 1.1rem;
+}
+
+#cronograma h3{
+    font-weight: bolder;
+    margin: 0;
+    text-align: left;
+    color: #f9f9f9;
+    font-size: 1.1rem;
+}
+#cronograma h5{
+    font-weight: 400;
+    font-weight: bolder;
+    margin-top: 5px;
+    margin:0 ;
+    color: #1E0D60;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#cronograma p{
+    margin: 0;
+    margin-top: 4px;
+    color: #f9f9f9;
+    font-size: .9rem;
+}
+
+/*BLUE*/
+.blue-bg{
+    background-color:#1E0D60;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.blue-bg .this-content{
+    margin-top: 30px;
+    background-color: #f9f9f9;
+    border: 15px;
+    margin-top: 15px;
+}
+
+.blue-bg .arrange-content{
+    margin-top: 55px;
+}
+
+.blue-bg .time{
+    background-color: #1E0D60;;
+    color:#f9f9f9;
+}
+.blue-bg .empresa{
+    background-color: #1E0D60;
+    color: #f9f9f9;
+
+}
+
+#cronograma .blue-bg h2{
+    color: #f9f9f9;
+     position: absolute;
+}
+#cronograma  .blue-bg h3{
+    color: #1E0D60;
+    font-size: 1.1rem;
+}
+#cronograma .blue-bg h4{
+    color: #f9f9f9;
+   
+}
+
+#cronograma .blue-bg h5{
+    color: #f9f9f9;
+    font-size: 1rem;
+}
+#cronograma .blue-bg p{
+    color: #1E0D60;
+    font-size: .9rem;
+}
+
+#cronograma h2{
+    margin-top: 15px;
+}
 
 /*Noticias*/
 
